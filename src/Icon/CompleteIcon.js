@@ -1,4 +1,5 @@
-import { Icon } from "./Icon";
+import { Icon } from "./";
+
 
 function CompleteIcon({ completed, onComplete }) {
     return (
