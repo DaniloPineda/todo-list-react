@@ -1,9 +1,10 @@
+import React from 'react';
 import './ToDoAddButton.css';
 
-function ToDoAddButton() {
+function ToDoAddButton({ setOpenModal }) {
     return (
       <button className="ToDoAddButton"
-        onClick={() => console.log('le diste click')}
+        onClick={() => setOpenModal(state => !state)}
       >+</button>
     );
   }

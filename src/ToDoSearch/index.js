@@ -1,10 +1,12 @@
 import React from 'react';
 import './ToDoSearch.css';
+import { ToDoContext } from '../ToDoContext';
 
-function ToDoSearch({searchValue, setSearchValue}) {
+function ToDoSearch() {
+  const {searchValue, setSearchValue} = React.useContext(ToDoContext)
   return (
     <input
-      placeholder="Cortar cebolla"
+      placeholder="Buscar..."
       className="ToDoSearch"
       value={searchValue}
       onChange={({ target }) => setSearchValue(target.value)}
